@@ -1,0 +1,15 @@
+<h1 id="result"></h1>
+
+<script>
+let ending = localStorage.getItem("ending");
+
+if(ending === "good"){
+  document.getElementById("result").innerText = "🏆 GOOD ENDING\nคุณจับคนร้ายได้!";
+}
+else if(ending === "bad"){
+  document.getElementById("result").innerText = "💀 BAD ENDING\nคนร้ายหนีไปได้...";
+}
+else{
+  document.getElementById("result").innerText = "🩸 SECRET ENDING\nคุณพบความจริงที่ซ่อนอยู่...";
+}
+</script>

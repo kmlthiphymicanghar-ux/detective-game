@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="css/game.css">
+
+<div class="hud">
+  <div>🕵️ <span id="playerName"></span></div>
+  <div>⭐ คะแนน: <span id="score">0</span></div>
+  <div>🔍 หลักฐาน: <span id="inventory"></span></div>
+</div>
+
+<div class="game-box">
+  <h2>👤 นายสมชาย (ผู้ต้องสงสัย)</h2>
+  <p id="npcText"></p>
+
+  <button onclick="askQuestion(0)">คุณอยู่ที่ไหนเมื่อคืน?</button>
+  <button onclick="askQuestion(1)">คุณรู้จักเหยื่อไหม?</button>
+  <button onclick="presentEvidence()">แสดงหลักฐาน</button>
+</div>
+
+<script src="js/game.js"></script>
